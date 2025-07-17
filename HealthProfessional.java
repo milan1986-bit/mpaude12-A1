@@ -1,0 +1,23 @@
+
+public class HealthProfessional {
+
+    private int id;
+    private String name;
+    private String basicInformation;
+
+    public HealthProfessional() {
+
+    }
+
+    public HealthProfessional(int id, String name, String basicInformation) {
+        this.id = id;
+        this.name = name;
+        this.basicInformation = basicInformation;
+    }
+
+    public void printAllDetailsOfHealthProfessional() {
+        System.out.println("Doctor Id: " + id);
+        System.out.println("Doctor Name: " + name);
+        System.out.println("Doctor Info: " + basicInformation);
+    }
+}
