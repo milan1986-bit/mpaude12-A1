@@ -11,6 +11,9 @@ public class GeneralPractitioner extends HealthProfessional {
     }
 
     public void printGeneralPractitionerDetails() {
-
+        System.out.println("The doctor details are:");
+        super.printAllDetailsOfHealthProfessional();
+        System.out.println("HealthProfessional's Specialization: " + specialization);
+        System.out.println("HealthProfessional Type: General Practitioner");
     }
 }
