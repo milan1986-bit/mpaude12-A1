@@ -62,6 +62,10 @@ public class AssignmentOne {
         createAppointment(appointments, "Charlotte Davis", "0421 556 789", "09:30", generalPractitioner2);
         createAppointment(appointments, "Ethan Wilson", "0433 987 123", "11:00", generalPractitioner1);
 
+        // Cardio Specialist Appointments
+        createAppointment(appointments, "Isla Brown", "0404 678 912", "13:00", cardiologist1);
+        createAppointment(appointments, "Mason Taylor", "0455 321 654", "14:30", cardiologist2);
+        createAppointment(appointments, "Ava Martin", "0466 112 334", "16:00", cardiologist3);
 
 
     }
