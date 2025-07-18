@@ -12,5 +12,16 @@ public class Appointment {
         this.preferredTimeSlot = preferredTimeSlot;
         this.healthProfessional = healthProfessional;
     }
+
+    public void printDetails() {
+        System.out.println("Patient Name: " + patientName);
+        System.out.println("Patient Mobile: " + patientMobile);
+        System.out.println("Patient Time Slot: " + preferredTimeSlot);
+        healthProfessional.printAllDetailsOfHealthProfessional();
+    }
+
+    public String getMobile() {
+        return patientMobile;
+    }
     
 }
