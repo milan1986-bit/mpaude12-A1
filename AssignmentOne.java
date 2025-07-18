@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class AssignmentOne {
     public static void main(String[] args) {
 
@@ -51,6 +53,16 @@ public class AssignmentOne {
 
 
 
+        // Part 5 – Collection of appointments
 
+        ArrayList<Appointment> appointments = new ArrayList<>();
+
+
+
+    }
+
+    public static void createAppointment(ArrayList<Appointment> appointments, String patientName, String mobile, String timeSlot, HealthProfessional doctor) {
+        Appointment appointment = new Appointment(patientName, mobile, timeSlot, doctor);
+        appointments.add(appointment);
     }
 }
