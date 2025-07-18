@@ -57,6 +57,11 @@ public class AssignmentOne {
 
         ArrayList<Appointment> appointments = new ArrayList<>();
 
+        // General Practitioner Appointments
+        createAppointment(appointments, "Liam Johnson", "0412 345 678", "08:00", generalPractitioner1);
+        createAppointment(appointments, "Charlotte Davis", "0421 556 789", "09:30", generalPractitioner2);
+        createAppointment(appointments, "Ethan Wilson", "0433 987 123", "11:00", generalPractitioner1);
+
 
 
     }
