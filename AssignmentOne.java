@@ -47,6 +47,10 @@ public class AssignmentOne {
         cardiologist2.printCardiologistDetails();
         cardiologist3.printCardiologistDetails();
 
+        System.out.println("------------------------------");
+
+
+
 
     }
 }
