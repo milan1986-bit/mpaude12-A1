@@ -84,4 +84,15 @@ public class AssignmentOne {
             }
         }
     }
+
+    public static void cancelBooking(ArrayList<Appointment> appointments, String mobile) {
+        for (int i = 0; i < appointments.size(); i++) {
+            if (appointments.get(i).getMobile().equals(mobile)) {
+                appointments.remove(i);
+                System.out.println("Appointment with mobile " + mobile + " cancelled.");
+                return;
+            }
+        }
+        System.out.println("No appointment found with mobile " + mobile + ".");
+    }
 }
