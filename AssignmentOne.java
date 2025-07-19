@@ -74,4 +74,14 @@ public class AssignmentOne {
         Appointment appointment = new Appointment(patientName, mobile, timeSlot, doctor);
         appointments.add(appointment);
     }
+
+    public static void printExistingAppointments(ArrayList<Appointment> appointments) {
+        if (appointments.isEmpty()) {
+            System.out.println("No existing appointments.");
+        } else {
+            for (Appointment appointment : appointments) {
+                appointment.printDetails();
+            }
+        }
+    }
 }
