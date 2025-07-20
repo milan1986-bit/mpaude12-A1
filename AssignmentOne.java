@@ -4,7 +4,7 @@ public class AssignmentOne {
     public static void main(String[] args) {
 
         // Part 3 – Using classes and objects
-
+        // Creating instances of GeneralPractitioner with different specializations
         GeneralPractitioner generalPractitioner1 = new GeneralPractitioner(
             1, "Dr. Oliver Thompson", 
             "Provides comprehensive healthcare to patients of all ages, with a focus on preventive care", 
@@ -23,6 +23,7 @@ public class AssignmentOne {
             "Chronic Disease Management"
         );
 
+        // Creating instances of Cardiologist with specific expertise
         Cardiologist cardiologist1 = new Cardiologist(
             4, "Dr. Charlotte White", 
             "Specialises in diagnosing and treating heart rhythm disorders", 
@@ -41,7 +42,7 @@ public class AssignmentOne {
             "Heart Failure Specialist"
         );
 
-
+        // Printing details of all doctors created above
         generalPractitioner1.printGeneralPractitionerDetails();
         generalPractitioner2.printGeneralPractitionerDetails();
         generalPractitioner3.printGeneralPractitionerDetails();
@@ -57,12 +58,12 @@ public class AssignmentOne {
 
         ArrayList<Appointment> appointments = new ArrayList<>();
 
-        // General Practitioner Appointments
+        // Creating appointments for general practitioners
         createAppointment(appointments, "Liam Johnson", "0412 345 678", "08:00", generalPractitioner1);
         createAppointment(appointments, "Charlotte Davis", "0421 556 789", "09:30", generalPractitioner2);
         createAppointment(appointments, "Ethan Wilson", "0433 987 123", "11:00", generalPractitioner1);
 
-        // Cardio Specialist Appointments
+        // Creating appointments for cardiologists
         createAppointment(appointments, "Isla Brown", "0404 678 912", "13:00", cardiologist1);
         createAppointment(appointments, "Mason Taylor", "0455 321 654", "14:30", cardiologist2);
         createAppointment(appointments, "Ava Martin", "0466 112 334", "16:00", cardiologist3);
@@ -70,11 +71,13 @@ public class AssignmentOne {
 
     }
 
+    // Helper method to create and add an appointment to the list
     public static void createAppointment(ArrayList<Appointment> appointments, String patientName, String mobile, String timeSlot, HealthProfessional doctor) {
         Appointment appointment = new Appointment(patientName, mobile, timeSlot, doctor);
         appointments.add(appointment);
     }
 
+    // Prints all existing appointments or a message if none are found
     public static void printExistingAppointments(ArrayList<Appointment> appointments) {
         if (appointments.isEmpty()) {
             System.out.println("No existing appointments.");
@@ -85,10 +88,11 @@ public class AssignmentOne {
         }
     }
 
+    // Cancels an appointment by searching for the patient’s mobile number
     public static void cancelBooking(ArrayList<Appointment> appointments, String mobile) {
         for (int i = 0; i < appointments.size(); i++) {
             if (appointments.get(i).getMobile().equals(mobile)) {
-                appointments.remove(i);
+                appointments.remove(i); // Removes the first match found
                 System.out.println("Appointment with mobile " + mobile + " cancelled.");
                 return;
             }
