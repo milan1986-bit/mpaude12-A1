@@ -71,6 +71,10 @@ public class AssignmentOne {
         printExistingAppointments(appointments);
 
         cancelBooking(appointments, "0455 321 654");
+
+        printExistingAppointments(appointments);
+
+        System.out.println("------------------------------");
     }
 
     // Helper method to create and add an appointment to the list
