@@ -68,7 +68,9 @@ public class AssignmentOne {
         createAppointment(appointments, "Mason Taylor", "0455 321 654", "14:30", cardiologist2);
         createAppointment(appointments, "Ava Martin", "0466 112 334", "16:00", cardiologist3);
 
+        printExistingAppointments(appointments);
 
+        cancelBooking(appointments, "0455 321 654");
     }
 
     // Helper method to create and add an appointment to the list
